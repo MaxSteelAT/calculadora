@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="calculadora.js"></script>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="calculadora.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <header id="result">
-            <div id="total" style="font-size: 50px;">=</div>
-        </header>
-        <div id="all">
-            <div id="elements">
-                <div id="numbers">
-                    <button onclick="Ac()">Ac</button>
-                    <button onclick="">delet</button>
-                    <button onclick="Add_operator('/')">/</button>
-                    <button onclick="Add_number(7)">7</button>
-                    <button onclick="Add_number(8)">8</button>
-                    <button onclick="Add_number(9)">9</button>
-                    <button onclick="Add_number(4)">4</button>
-                    <button onclick="Add_number(5)">5</button>
-                    <button onclick="Add_number(6)">6</button>
-                    <button onclick="Add_number(3)">3</button>
-                    <button onclick="Add_number(2)">2</button>
-                    <button onclick="Add_number(1)">1</button>
-                </div>
-                <div id="cero">
-                    <button style="width: 168px;"onclick="Add_number(0)">0</button>
-                    <button onclick="Point()">.</button>
-                </div>
+  <div id="container">
+    <header id="result">
+        <div id="total" style="font-size: 50px;">=</div>
+    </header>
+    <div id="all">
+        <div id="elements">
+            <div id="numbers">
+                <button onclick="Ac()">Ac</button>
+                <button onclick="">delet</button>
+                <button onclick="Add_operator('/')">/</button>
+                <button onclick="Add_number(7)">7</button>
+                <button onclick="Add_number(8)">8</button>
+                <button onclick="Add_number(9)">9</button>
+                <button onclick="Add_number(4)">4</button>
+                <button onclick="Add_number(5)">5</button>
+                <button onclick="Add_number(6)">6</button>
+                <button onclick="Add_number(3)">3</button>
+                <button onclick="Add_number(2)">2</button>
+                <button onclick="Add_number(1)">1</button>
             </div>
-            <div id="operations">
-                <button onclick="Add_operator ('*')">*</button>
-                <button onclick="Add_operator ('-')">-</button>
-                <button style="height: 115px;" onclick="Add_operator('+')">+</button>
-                <button style="height: 130px" onclick="Result()">=</button>
+            <div id="cero">
+                <button style="width: 168px;"onclick="Add_number(0)">0</button>
+                <button onclick="Point()">.</button>
             </div>
+        </div>
+        <div id="operations">
+            <button onclick="Add_operator ('*')">*</button>
+            <button onclick="Add_operator ('-')">-</button>
+            <button style="height: 115px;" onclick="Add_operator('+')">+</button>
+            <button style="height: 130px" onclick="Result()">=</button>
+        </div>
         </div>
     </div>
 </body>
