@@ -1,48 +1,39 @@
 let Input = ""
-
+/* Selecciona el elemento number mediante el evento onclick para realizar la operción*/
 function Add_number(number) {
-    Input = Input + number
-    let element =  document.getElementById("total")
-    element.textContent = Input
+  Input = Input + number
+  let element =  document.getElementById("total")
+  element.textContent = Input
 }
 
+/*Selecciona el operador (suma, resta, división y multiplicacion) mediante el evento onclick.
+  Realiza la operación */
 function Add_operator(operator) {
-    Input = Input + operator
-    let element =  document.getElementById("total")
-    element.textContent = Input
+  Input = Input + operator
+  let element =  document.getElementById("total")
+  element.textContent = Input
 }
 
+/*Selecciona el elemento AC mediante el evento onclick.
+  Elimina los números u operadores seleccionados.*/
 function Ac() {
-   Input = ""
-   let element= document.getElementById("total")
-   element.textContent = '0'  
+  Input = ""
+  let element= document.getElementById("total")
+  element.textContent = '0'  
 }
 
+/* Selecciona el elemento Point mediante el evento onclick.
+  Permite agregar decímales a la operación*/
 function Point() {
-    Input = Input + '.'
-    let element =  document.getElementById("total")
-    element.textContent = Input
+  Input = Input + '.'
+  let element =  document.getElementById("total")
+  element.textContent = Input
 }
 
+/*Selecciona el elemento Result mediante el evento onclick.
+  Peemite observarf el resultado de la operación.*/
 function Result() {
-   let Result = eval(Input)
-   let element = document.getElementById("total")
-
-    element.textContent = Result
+  let Result = eval(Input)
+  let element = document.getElementById("total")
+  element.textContent = Result
 }
-
-/*document.addEventListener('keydown', function(event) {
-    let key = event.key;
-
-    console.log(key)
-
-    if(key>=0 && key<=9){
-
-        console.log("es numero")
-        Add_number(key)
-    }
-    else{
-        console.log("no es numero")
-    }
-});
-*/
